@@ -1,4 +1,6 @@
 import array
 
-val = array.array('i', [1, 2, 3, 4, 5, 6])  # 'i' is signed integer (usually 4 bytes)
-print(val)
+val = array.array('i',[10,11,20,22,25,34,54,23])  # 'i' is signed integer (usually 4 bytes)
+
+for i in range(0,8):
+    print(val[i],end=" ")
