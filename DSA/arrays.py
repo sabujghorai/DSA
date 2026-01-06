@@ -12,3 +12,7 @@ for x in val: # enhance for loop to print the array
 
 print("\n")
 print(val.typecode) # prints i ---> typecode is integer
+
+val.reverse() # reverse the array
+for i in range(0,len(val)):
+    print(val[i],end=" ")
