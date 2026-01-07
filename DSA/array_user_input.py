@@ -16,6 +16,7 @@
 # a = arr.index(43)
 # print(a)
 
+# Take both the element and index element to print the elements and the index number from user
 from array import *
 arr = array('i',[])
 
@@ -31,4 +32,4 @@ print("\n")
 
 m = (int(input("Enter any one number of your given element :")))
 
-print("index of your number is ",arr.index(m))
+print("index of your number is : ",arr.index(m))
