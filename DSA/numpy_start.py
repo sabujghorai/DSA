@@ -3,17 +3,16 @@
 # for x in a:
 #     print(x,end=" ")
 
-# LINSPACE function
-from numpy import *
-a = linspace(10,20,4) # start,stop,how many number you want
+# # LINSPACE function
+# from numpy import *
+# a = linspace(10,20,4) # start,stop,how many number you want
 
-for i in a:
-    print(i,end=" ")
+# for i in a:
+#     print(i,end=" ")
 
 
 # ARANGE function
 from numpy import *
-a = linspace(10,20,5) # start,stop,common difference
-
+a = arange(10,20,2) # start,stop,jump
 for i in a:
     print(i,end=" ")
