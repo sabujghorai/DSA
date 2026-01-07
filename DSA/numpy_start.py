@@ -33,3 +33,10 @@ a = ones(10) # start,stop,jump
 for i in a:
     print(i,end=" ")
 print("\n")
+
+
+#  FULL() function
+from numpy import *
+a = full(10,5)# create array of length 10, filled with 5
+for i in a:
+    print(i,end=" ")
