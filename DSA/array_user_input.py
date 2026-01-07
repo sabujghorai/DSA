@@ -32,4 +32,7 @@ print("\n")
 
 m = (int(input("Enter any one number of your given element :")))
 
-print("index of your number is : ",arr.index(m))
+if m in arr:
+    print("index of your number is : ",arr.index(m))
+else:
+    print("The number you have given is not in the array..")
