@@ -1,41 +1,31 @@
-# Node class
 class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+    def __init__(self,info,next=None):
+        self.info = info
+        self.next = next
 
-
-# Singly Linked List class
 class SinglyLinkedList:
-    def __init__(self):
-        self.head = None
+    def __init__(self,head=None):
+        self.head = head
 
-    def insert_at_end(self, data):
-        new_node = Node(data)
+    def InsertAtTheEnd(self,value):
+        temp = Node(value)
+        if(self.head != None):
+            t1 = self.head
+            while(t1.next != None):
+                t1 = t1.next 
+            t1.next = temp
+        else:
+            self.head = temp
 
-        if self.head is None:
-            self.head = new_node
-            return
+    def printLL(self):
+        t1 = self.head
+        while(t1.next != None):
+            print(t1.info)
+            t1 = t1.next
+        print(t1.info)
 
-        temp = self.head
-        while temp.next:
-            temp = temp.next
-
-        temp.next = new_node
-
-    def print_list(self):
-        temp = self.head
-        while temp:
-            print(temp.data, end=" -> ")
-            temp = temp.next
-        print("None")
-
-
-# Driver code
-sll = SinglyLinkedList()
-sll.insert_at_end(10)
-sll.insert_at_end(20)
-sll.insert_at_end(30)
-sll.insert_at_end(40)
-
-sll.print_list()
+obj = SinglyLinkedList()
+obj.InsertAtTheEnd(10)
+obj.InsertAtTheEnd(20)
+obj.InsertAtTheEnd(30)
+obj.printLL()
