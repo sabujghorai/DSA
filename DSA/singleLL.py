@@ -21,8 +21,7 @@ while(n1 != None):
     n1 = n1.next
 print("None")
 
-
-
+# New linked list
 class Node:
     def __init__(self, data):
         self.data = data
