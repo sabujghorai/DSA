@@ -60,7 +60,7 @@ obj.insertAtTheEnd(40)
 obj.printLL()
 
 
-# New Node 
+# New linked list , new Node , with the delete method 
 class Node:
     def __init__(self, data):
         self.data = data
