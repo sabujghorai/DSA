@@ -60,6 +60,7 @@ obj.insertAtTheEnd(40)
 obj.printLL()
 
 
+# New Node
 class Node:
     def __init__(self, data):
         self.data = data
