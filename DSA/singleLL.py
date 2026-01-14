@@ -57,3 +57,26 @@ obj.insertAtTheEnd(20)
 obj.insertAtTheEnd(30)
 obj.insertAtTheEnd(40)
 obj.printLL()
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class SinglyLinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert_at_beginning(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def insert_at_end(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+
+        
