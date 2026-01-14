@@ -78,4 +78,15 @@ class SinglyLinkedList:
             self.head = new_node
             return
 
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = new_node
+
+    def delete(self, key):
+        temp = self.head
+        if temp and temp.data == key:
+            self.head = temp.next
+            return
+
         
