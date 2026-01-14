@@ -89,4 +89,32 @@ class SinglyLinkedList:
             self.head = temp.next
             return
 
-        
+        prev = None
+        while temp and temp.data != key:
+            prev = temp
+            temp = temp.next
+
+        if temp is None:
+            print("Value not found")
+            return
+
+        prev.next = temp.next
+
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
+
+
+# 🔹 Testing
+ll = SinglyLinkedList()
+ll.insert_at_end(10)
+ll.insert_at_end(20)
+ll.insert_at_beginning(5)
+ll.insert_at_end(30)
+
+ll.display()
+ll.delete(20)
+ll.display()
