@@ -81,7 +81,7 @@ class SingleLL:
                 t1 = t1.next
             t1.next = temp   # linking the new node
 
-    def insertAtBeg(self,value):
+    def insertAtBeg(self,value): # inserts the value at the begeing
         temp = Node(value) 
         temp.next = self.head # prints the value --> 5
         self.head = temp # prints the other values
