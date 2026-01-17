@@ -22,7 +22,6 @@ while(n1 != None):
 print("None")
 
 
-
 # New linked list
 class Node:
     def __init__(self, data):
