@@ -181,6 +181,8 @@ class SingleLL:
     def deleteLL(self,value): # delete the value 
         t1 = self.head
         previous = t1
+        if (self.head == value):
+            self.head = t1.next
         while (t1.next != None):
             if(t1.data == value):
                 previous.next = t1.next
@@ -202,5 +204,5 @@ obj.insertAtTheEnd(20)
 obj.insertAtTheEnd(30)
 obj.insertAtTheEnd(40)
 obj.insertAtMid(40,20)
-obj.deleteLL(40)
+obj.deleteLL(10)
 obj.printLL()
