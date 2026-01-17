@@ -190,6 +190,8 @@ class SingleLL:
             else:
                 previous = t1
                 t1 = t1.next
+        if(t1.data == value):
+            previous.next = None
      
     def printLL(self):
         t1 = self.head
@@ -202,7 +204,6 @@ obj = SingleLL()
 obj.insertAtTheEnd(10)
 obj.insertAtTheEnd(20)
 obj.insertAtTheEnd(30)
-obj.insertAtTheEnd(40)
-obj.insertAtMid(40,20)
+# obj.insertAtMid(40,20)
 obj.deleteLL(10)
 obj.printLL()
