@@ -16,8 +16,6 @@ d.next = e
 head = a
 
 # Traverse linked list
-# curr = head ---> a
-# curr = curr.next ---> b
 def printLL(head): #writing as a function
     curr = head
     while curr != None :
