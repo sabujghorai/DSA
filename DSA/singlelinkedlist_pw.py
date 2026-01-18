@@ -21,5 +21,10 @@ def printLL(head): #writing as a function
     while curr != None :
         print(curr.data)
         curr = curr.next # moves to next node
+        
+#insert at the begeining
+NewNode = Node(4)
+NewNode.next = head
+head = NewNode
 
 printLL(head)
