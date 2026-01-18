@@ -23,3 +23,5 @@ curr = head
 while curr != None :
     print(curr.data)
     curr = curr.next # moves to next node
+
+print("hello world")
