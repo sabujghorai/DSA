@@ -34,4 +34,7 @@ while curr.next != None:
     curr = curr.next
 curr.next = NewNode1
 
+# insertion at the middle at the k th index
+ 
+
 printLL(head)
