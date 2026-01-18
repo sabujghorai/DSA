@@ -3,7 +3,7 @@ class Node:
         self.data = data
         self.next = None
 a = Node(5)
-b = Node(3)
+b = Node(6)
 c = Node(8)
 d = Node(12)
 e = Node(13)
@@ -21,10 +21,17 @@ def printLL(head): #writing as a function
     while curr != None :
         print(curr.data)
         curr = curr.next # moves to next node
-        
+
 #insert at the begeining
 NewNode = Node(4)
 NewNode.next = head
 head = NewNode
+
+# insert at the end
+NewNode1 = Node(14)
+curr = head
+while curr.next != None:
+    curr = curr.next
+curr.next = NewNode1
 
 printLL(head)
