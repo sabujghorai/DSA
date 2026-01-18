@@ -18,10 +18,10 @@ head = a
 # Traverse linked list
 # curr = head ---> a
 # curr = curr.next ---> b
+def printLL(head): #writing as a function
+    curr = head
+    while curr != None :
+        print(curr.data)
+        curr = curr.next # moves to next node
 
-curr = head
-while curr != None :
-    print(curr.data)
-    curr = curr.next # moves to next node
-
-print("hello world")
+printLL(head)
