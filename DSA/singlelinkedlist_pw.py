@@ -14,8 +14,12 @@ c.next = d
 d.next = e
 
 head = a
-print(head.data)
-print(head.next.data)
-print(head.next.next.data)
-print(head.next.next.next.data)
-print(head.next.next.next.next.data)
+
+# Traverse linked list
+# curr = head ---> a
+# curr = curr.next ---> b
+
+curr = head
+while curr != None :
+    print(curr.data)
+    curr = curr.next # moves to next node
