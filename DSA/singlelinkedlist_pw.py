@@ -37,11 +37,12 @@ def printLL(head): #writing as a function
 # insertion at the middle at the k th index
 k = 2
 NewNode = Node(7)
+
 curr = head
-for i in range (k-1):
+for i in range(k-1):
     curr = curr.next
 
-NewNode.next = curr.next.next
+NewNode.next = curr.next
 curr.next = NewNode
 
 printLL(head)
