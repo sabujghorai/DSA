@@ -22,17 +22,17 @@ def printLL(head): #writing as a function
         print(curr.data)
         curr = curr.next # moves to next node
 
-# #insert at the begeining
-# NewNode = Node(4)
-# NewNode.next = head
-# head = NewNode
+#insert at the begeining
+NewNode = Node(4)
+NewNode.next = head
+head = NewNode
 
-# # insert at the end
-# NewNode1 = Node(14)
-# curr = head
-# while curr.next != None:
-#     curr = curr.next
-# curr.next = NewNode1
+# insert at the end
+NewNode1 = Node(14)
+curr = head
+while curr.next != None:
+    curr = curr.next
+curr.next = NewNode1
 
 # insertion at the middle at the k th index
 k = 2
@@ -45,4 +45,3 @@ for i in range(k-1):
 NewNode.next = curr.next
 curr.next = NewNode
 
-printLL(head)
