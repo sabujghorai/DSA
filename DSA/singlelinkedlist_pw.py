@@ -46,13 +46,20 @@ def printLL(head): #writing as a function
 # curr.next = NewNode
 
 # delete the first node
-head = head.next
+# head = head.next
 
-# deleting the last Index
+# # deleting the last Index
+# curr = head
+# while curr.next.next != None:
+#     curr = curr.next
+
+# curr.next = None
+
+# deleting the k-th index
+k = 2
 curr = head
-while curr.next.next != None:
+for i in range(k-1):
     curr = curr.next
-
-curr.next = None
+curr.next = curr.next.next # delete the 2nd index = 8
 
 printLL(head)
