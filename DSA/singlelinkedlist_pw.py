@@ -45,6 +45,14 @@ def printLL(head): #writing as a function
 # NewNode.next = curr.next
 # curr.next = NewNode
 
+# delete the first node
 head = head.next
+
+# deleting the last Index
+curr = head
+while curr.next.next != None:
+    curr = curr.next
+
+curr.next = None
 
 printLL(head)
