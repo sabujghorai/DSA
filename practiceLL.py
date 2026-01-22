@@ -22,7 +22,6 @@ class SinglleLL:
 
         return curr
 
-
 # create nodes
 n1 = Node(10)
 n2 = Node(20)
