@@ -68,3 +68,5 @@ for i in range(k-1):
 curr.next = curr.next.next # delete the 2nd index = 8
 
 printLL(head)
+
+print("hello world")
