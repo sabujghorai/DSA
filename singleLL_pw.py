@@ -68,3 +68,28 @@ for i in range(k-1):
 curr.next = curr.next.next # delete the 2nd index = 8
 
 printLL(head)
+
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+def print_and_length(head):
+    count = 0
+    temp = head
+
+    while temp:
+        print(temp.data, end=" -> ")
+        count += 1
+        temp = temp.next
+
+    print("None")
+    print("Length:", count)
+
+# Test
+head = Node(1)
+head.next = Node(2)
+head.next.next = Node(3)
+
+print_and_length(head)
